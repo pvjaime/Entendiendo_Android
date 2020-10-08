@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Entendiendo Android</string>
+    <string name="bienvenida"> Hola a todos </string>
+    <string name="btn_ingresar"> Pero... </string>
+    <string name="texto_bienvenida">Hola! Ingresa tus datos \n para acceder a la app</string>
+    <!-- Textos relacionados con el Login -->
+    <string name="btn_login"> Ingresar a la App </string>
+    <string name="btn_registro"> Registrate en nuestra app </string>
+    <string name="text_ingreso_login"> Ingresa tu nickname </string>
+    <string name="text_ingreso_password"> Ingresa tu password </string>
+
 </resources>

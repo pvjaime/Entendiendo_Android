@@ -4,17 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/blancoInvierno">
 
     <TextView
+        android:id="@+id/textoBienvenida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#0F4FE8"
-        android:text="Hola Alumnos onlines"
+        android:text="@string/bienvenida"
+        android:textColor="#FFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="#FFF"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logoInacap"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/logo_inacap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoBienvenida"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <Button
+        android:id="@+id/ingresar_a_la_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_ingresar"
+        app:layout_constraintBottom_toTopOf="@+id/logoInacap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoBienvenida"
+        android:onClick="saludarATodos"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
